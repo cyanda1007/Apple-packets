@@ -1,0 +1,28 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: white
+}
+
+
+
+
+.section {
+	flex: 1;
+	background-color: lightgrey;
+	padding: 2em;
+	margin: 1em;
+	border-radius: 0.5em;
+}
+
+input {
+	padding: 1em;
+	border-radius: 0.5em;
+	font-weight: bold;
+    align-items: left;
+}
+
+@media (max-width: 768px) {
+	.sections {
+		display: flex;
+	}
+}
