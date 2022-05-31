@@ -4,13 +4,16 @@ function ApplePackets(){
     let TotalCost = 0;
 
 
-    function costPricePerApple(){
-        return appleCost
+    function costPricePerApple(profit, boxCost,numberOfAppleInABox){
+        let percent = boxCost * (profit/100)
+        let price = (boxCost + percent) / numberOfAppleInABox
+        return price;
 
     }
 
-    function costPricePerPackets(){
-        return ApplePacket
+    function costPricePerPackets(boxCost,numberOfAppleInABox){
+        let price = (boxCost/numberOfAppleInABox)
+        return price;
 
     }
 
@@ -19,6 +22,7 @@ function ApplePackets(){
     }
     
     function  packetsPrice(){
+        
 
     }
 
@@ -27,7 +31,7 @@ function ApplePackets(){
     }
 
     function setPacketsCost(price){
-        ApplePacket = price
+        ApplePacket
     }
 
     function getTotalCost(){

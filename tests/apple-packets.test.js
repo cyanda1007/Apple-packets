@@ -2,8 +2,7 @@ describe('The Apple packets app', function(){
 
     it('should calculate how much one apple costs to buy', function(){
         const ApplePrice = ApplePackets();
-        ApplePrice.setAppleCost(3.50);
-        assert.equal(3.50,ApplePrice.costPricePerApple());
+        
 
     })
 
